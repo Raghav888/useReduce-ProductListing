@@ -1,2 +1,2 @@
-# useReduce-ProductListing
+# useReducer-ProductListing
 Created with CodeSandbox
