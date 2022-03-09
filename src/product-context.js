@@ -16,9 +16,9 @@ const ProductProvider = ({ children }) => {
 
   const dataSortbyPrice = ({ data, sortbyPrice }) => {
     if (sortbyPrice === "high") {
-      return data.sort((a, b) => b.price - a.price);
+      return [...data].sort((a, b) => b.price - a.price);
     } else if (sortbyPrice === "low") {
-      return data.sort((a, b) => a.price - b.price);
+      return [...data].sort((a, b) => a.price - b.price);
     } else {
       return data;
     }
